@@ -40,7 +40,11 @@ uv run pvpi
 
 Or, add to you own Python project:
 ```shell
-uv add git+https://github.com/LukeDitria/pvpi_manager.git
+uv add pvpi
+```
+OR
+```shell
+pip install pvpi
 ```
 
 # Quick-start
