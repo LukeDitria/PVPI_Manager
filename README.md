@@ -38,15 +38,6 @@ uv sync
 uv run pvpi
 ```
 
-Or, add to you own Python project:
-```shell
-uv add pvpi
-```
-OR
-```shell
-pip install pvpi
-```
-
 # Quick-start
 
 ```shell
@@ -164,18 +155,6 @@ uv run pvpi set-charging --enable
 ```
 
 
-
-# Creating your own client node
-
-```python
-from pvpi import PvPiClient
-
-client = PvPiClient()
-print(client.get_alive())
-```
-
-Check out the [client.py](src/pvpi/client.py) for more details.
-
 # More about systemd
 
 (i) `systemd` is the standard system and service manager for modern Linux distributions. Once installed, you can check the `status`, `start`, `stop`, or `restart` these PV PI services using the `systemctl` command:
@@ -209,3 +188,27 @@ You can change the behaviour of the PV Pi Manager services by editing and saving
 ```shell
 uv run pvpi restart
 ```
+
+# Adding the pvpi client to your own project!
+You can use uv or pip to add the pvpi client to your Python project.
+You'll still need to install the PV Pi Manager from git as above at this stage.
+After this you can:
+```shell
+uv add pvpi
+```
+OR
+```shell
+pip install pvpi
+```
+
+## Creating your own client node
+
+```python
+from pvpi import PvPiClient
+
+client = PvPiClient()
+print(client.get_alive())
+```
+
+Check out the [client.py](src/pvpi/client.py) for more details.
+
