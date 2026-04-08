@@ -18,8 +18,8 @@ class PvPiConfig(BaseSettings, extra="forbid"):
     log_period: int = Field(5, description="Pv Pi system metrics logging interval minutes", gt=0)  # mins
     startup_delay: int = Field(20, description="Seconds delay after service start before proceeding", ge=0)  # secs
 
-    low_bat_volt: float = Field(12.5, description="Voltage at which to shutdown the Raspberry Pi", ge=0)  # volts
-    wake_up_volt: float = Field(13, description="Voltage at which power supply will be turned on", ge=0)  # volts
+    low_bat_volt: float = Field(12.9, description="Voltage at which to shutdown the Raspberry Pi", ge=0)  # volts
+    wake_up_volt: float = Field(13.2, description="Voltage at which power supply will be turned on", ge=0)  # volts
 
     # Turning the power supply off on shutdown
     power_off_on_shutdown: bool = Field(True, description="Turn off power supply on shutdown")
