@@ -1,5 +1,15 @@
 # pvpi_manager
-The official Python SDK for the Pv Pi.
+The official Python SDK for the PV Pi.<br>
+The PV Pi or the PhotoVoltaic Pi is the first Raspberry Pi HAT that can provide power
+from a high-capacity 12 Volt lithium-ion phosphate battery (LiFePO4) while also charg-
+ing that battery from a large solar panel. The PV Pi with its onboard microcontroller
+also enables a range of smart features to support off-grid operation of your Raspberry
+Pi in remote locations.
+
+# Support and Documentation
+For more information on the PV Pi you can consult the [User Manual](https://static1.squarespace.com/static/6767a8ab1279321b70138597/t/69d9bc262591ff33bcb3ba00/1775877158826/PV_PI_User_Manual.pdf) <br>
+For help setting up your device you can watch the [PV Pi Tutorials](https://youtube.com/playlist?list=PLbFaSy7wJeFz2h7MJX0VhsMdpvZVvqfuv&si=jxs1IlyUbiJkMmiR) on the AutoEcology Youtube channel <br>
+For questions and comments head over to the [AutoEcology Discord Server](https://discord.gg/peywh7Yx)<br>
 
 # Setup
 ## Requirements
@@ -49,7 +59,7 @@ uv run pvpi connection-test
 
 ## Install PV Pi Manager Service
 
-Pv Pi manager comes with an `install` command to setup an automatic PV Pi Manager Service that will handle power management and scheduling. 
+PV Pi manager comes with an `install` command to setup an automatic PV Pi Manager Service that will handle power management and scheduling. 
 
 ```shell
 uv run pvpi install
@@ -62,7 +72,7 @@ The installation places two system services that will run automatically upon eve
 as well as the historical data logs hosted on port 8501. Historical data log requires
 log_pvpi_stats to be enabled
 
-This is an optional installation. Each service can be run directly via the CLI, and neither are required to run in order to use the Pv Pi SDK. The serve as examples on which to base your own work.
+This is an optional installation. Each service can be run directly via the CLI, and neither are required to run in order to use the PV Pi SDK. The serve as examples on which to base your own work.
 
 # Other CLI commands
 
