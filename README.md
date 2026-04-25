@@ -9,7 +9,7 @@ Pi in remote locations.
 # Support and Documentation
 For more information on the PV Pi you can consult the [User Manual](https://static1.squarespace.com/static/6767a8ab1279321b70138597/t/69dae05a35751f0597eea13b/1775951962539/PV_PI_User_Manual.pdf) <br>
 For help setting up your device you can watch the [PV Pi Tutorials](https://youtube.com/playlist?list=PLbFaSy7wJeFz2h7MJX0VhsMdpvZVvqfuv&si=jxs1IlyUbiJkMmiR) on the AutoEcology Youtube channel <br>
-For questions and comments head over to the [AutoEcology Discord Server](https://discord.gg/peywh7Yx)<br>
+For questions and comments head over to the [AutoEcology Discord Server](https://discord.gg/jhXaSxVU9g)<br>
 
 # Setup
 ## Requirements
