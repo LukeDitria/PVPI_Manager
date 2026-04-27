@@ -38,6 +38,14 @@ For the Raspberry Pi and other SBC using the 40pin header the PV PI will use the
 
 You can override the port by setting `uart_port` in the `config.json` file.
 
+### Disable Sudo Password
+As of version 6.2 of Raspberry Pi OS, passwordless sudo is now disabled by default.
+The PV Pi manager requires sudo for shutdown commands, which will currently fail if you don't enable passwordless sudo.
+1. `sudo raspi-config`
+2. Select `1 System Options`
+3. Select `S10 Admin Password`
+4. Select "No" to "Would you like admin (sudo) password to be enabled"
+   
 ## Installation
 
 Clone the repo:
