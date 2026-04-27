@@ -127,7 +127,7 @@ class PvPiClient:
         if unit == PvPiUnits.mV:
             pv_v = int(value)
             # fix for overflow on FW 1.12
-            if pv_v < -1:
+            if pv_v < 0:
                 pv_v += 65536 
 
             return pv_v / 1000
