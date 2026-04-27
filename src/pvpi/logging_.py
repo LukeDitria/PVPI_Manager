@@ -35,7 +35,7 @@ class RotatingCSVLogger:
             retention_days: Number of days to keep old logs
         """
         self.log_dir = log_dir
-        self.log_dir.mkdir(exist_ok=True)
+        self.log_dir.mkdir(parents=True, exist_ok=True)
         self.retention_days = retention_days
         self.headers = [
             "Timestamp",
