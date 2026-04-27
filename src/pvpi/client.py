@@ -125,11 +125,12 @@ class PvPiClient:
         resp = self._interface.write(b"GET_PV_V")
         unit, value = resp.split(",")
         if unit == PvPiUnits.mV:
+            pv_v = int(value)
             # fix for overflow on FW 1.12
-            if value < -1:
-                value += 65536 
+            if pv_v < -1:
+                pv_v += 65536 
 
-            return int(value) / 1000
+            return pv_v / 1000
         else:
             raise ValueError("Failed to read PV (solar) voltage")
 
